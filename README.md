@@ -10,31 +10,6 @@ Este proyecto implementa un sistema distribuido basado en microservicios utiliza
 - **RESTful API**: Diseño escalable y seguro para la comunicación entre servicios.
 
 
-**Estructura del Proyecto**
-
-procesos/
-│
-├── docker-compose.yml       # Configuración de contenedores
-├── init.mongo.js            # Script de inicializacion
-├── package.js               # Script inicar servidor con nodemon y las dependencias
-├── package-lock.js          # Especificar dependencias instalads
-├── auth-service/            # Servicio de autenticación
-│   ├── models/              # Modelos de base de datos
-│   │   └── user.js          # Modelo del usuario
-│   ├── routes/              # Rutas del servicio
-│   │   └── authRoutes.js    # Rutas de autenticación
-│   ├── .env                 # Variables de entorno
-│   ├── dockerfile           # Dockerfile para el servicio
-│   ├── package.json         # Configuración del proyecto Node.js
-│   ├── server.js            # Archivo principal del servicio
-│
-├── product_service/         # Servicio de productos
-│   ├── dockerfile           # Dockerfile para el servicio
-│   ├── index.js             # Archivo principal del servicio
-│   ├── package.json         # Configuración del proyecto Node.js
-│
-└── shared/                  # Código compartido entre servicios
-    └── package.json
 
 ## **Requisitos Previos**
 Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
